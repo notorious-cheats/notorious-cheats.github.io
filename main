@@ -518,7 +518,7 @@
 		document.getElementById("vid").volume = 0.5;
 
 		function refresh(x) {
-			$("#vidSrc").attr("src", "./vids/" + x + ".mp4");
+			$("#vidSrc").attr("src", "./" + x + ".mp4");
 			$(".vidName").text(vidNames[x]);
 			$("#vid")[0].load();
 			$(".tile").css("color", "white");
