@@ -518,11 +518,7 @@
 		document.getElementById("vid").volume = 0.5;
 
 		function refresh(x) {
-			$("#vidSrc").attr("src", "./" + x + ".mp4");
-			$(".vidName").text(vidNames[x]);
-			$("#vid")[0].load();
-			$(".tile").css("color", "white");
-			$('.tile:contains("' + vidNames[x] + '")').css("color", "#9e0000");
+
 		}
 
 		var vidNum = Math.floor(Math.random() * vidNames.length);
